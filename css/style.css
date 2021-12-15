@@ -1,5 +1,4 @@
 /* Header Section-Navbar */
-
 #nav_header {
    position: fixed;
    top: 0;
@@ -7,20 +6,23 @@
    width: 100vw;
    height: 18vh;
    z-index: 200;
-   border-bottom: solid 1px #e5e5e5;
+   border-bottom: solid 1px var(--border-color);
    background-color: #fff;
-   padding: 20px;
+   padding: var(--points);
 }
+
 .container {
    padding: 0 48px;
 }
+
 .flex_nav {
    display: flex;
 }
+
 .header_primary {
    padding: 10px;
    flex: 1;
-   font-size: 20px;
+   font-size: var(--points);
    font-weight: 500;
    text-align: center;
    line-height: 1.8;
@@ -34,9 +36,11 @@
    list-style: none;
    margin: 0 8px;
 }
+
 .list_item a {
    display: inline-block;
 }
+
 .list_item a span {
    display: inline-block;
    padding: 8px 16px;
@@ -45,9 +49,11 @@
 .header_logo span {
    display: block;
 }
+
 .header_logo span img {
    width: 20vw;
 }
+
 .header_account {
    display: flex;
    align-items: center;
@@ -58,14 +64,16 @@
 .login {
    display: block;
 }
+
 .view_cart img {
    width: 2vw;
 }
+
 .count {
-   background-color: #01c0bb;
+   background-color: var(--button-color);
    color: #fff;
    padding: 10px;
-   font-size: 20px;
+   font-size: var(--points);
    border-radius: 100px;
    border-style: none;
 }
@@ -74,6 +82,7 @@
 main {
    padding: 100px 0;
 }
+
 /* About Section */
 .about {
    align-items: center;
@@ -88,21 +97,25 @@ main {
    position: relative;
    padding: 48px 0;
 }
+
 .about_heading {
    position: absolute;
    z-index: 1;
    background-color: #000;
-   padding: 20px;
+   padding: var(--points);
 }
+
 .about_heading h1 {
    color: #fff;
 }
+
 .about_para {
    max-width: 600px;
    line-height: 1.875;
    text-align: center;
    margin: 0 auto;
 }
+
 /* Product Section */
 .grid_container {
    display: grid;
@@ -113,15 +126,18 @@ main {
    margin-left: auto;
    margin-right: auto;
 }
+
 .product_card {
    display: grid;
    grid-template-columns: 1fr;
    grid-template-rows: auto;
    text-align: center;
 }
+
 .product_image {
    position: relative;
 }
+
 .product_image img {
    top: 0;
    left: 0;
@@ -133,6 +149,7 @@ main {
 .product_name {
    font-weight: bold;
 }
+
 .product_price {
    padding: 12px;
 }
@@ -140,8 +157,8 @@ main {
 .add_cart button {
    display: inline-flex;
    align-items: center;
-   background-color: #01c0bb ;
-   border: solid 2px #01c0bb;
+   background-color: var(--button-color);
+   border: solid 2px var(--button-color);
    color: #fff;
    justify-content: center;
    min-width: 152px;
@@ -150,9 +167,7 @@ main {
    margin-top: 12px;
 }
 
-
 /* Cart Section */
-
 #cart_container {
    visibility: hidden;
    position: fixed;
@@ -165,6 +180,7 @@ main {
    height: 100%;
    z-index: 700;
 }
+
 .background {
    position: absolute;
    top: 0;
@@ -177,6 +193,7 @@ main {
    opacity: 0.8;
    background-color: rgba(17, 17, 17, 0.7);
 }
+
 .cart_layout {
    transform: translateX(0);
    position: absolute;
@@ -190,6 +207,7 @@ main {
    width: 100%;
    background-color: #fff;
 }
+
 .js_container {
    display: flex;
    align-items: center;
@@ -206,6 +224,7 @@ main {
    font-size: 1.25rem;
    text-align: center;
 }
+
 .add_products {
    flex: auto;
    overflow-y: auto;
@@ -217,6 +236,7 @@ main {
    text-align: center;
    font-size: 2em;
 }
+
 .price {
    font-size: 32px 40px;
    position: relative;
@@ -224,38 +244,44 @@ main {
    align-items: center;
    justify-content: flex-start;
    height: 96px;
-   padding-left: 20px;
-   background-color: #01c0bb;
+   padding-left: var(--points);
+   background-color: var(--button-color);
 }
+
 .price div {
    color: #fff;
    font-size: 1.5rem;
-   padding: 20px;
+   padding: var(--points);
 }
-/* After AddedItems */
+
+/* After AddedItems to the cart*/
 .addedCartItems {
    display: grid;
    grid-template-columns: 3fr 1fr;
    grid-template-rows: 1fr;
-   padding: 20px;
+   padding: var(--points);
 }
+
 .adding_count {
-   padding: 20px 0;
+   padding: var(--points) 0;
    display: flex;
    flex-direction: row;
 }
+
 .adding_count button {
    flex-grow: 1;
 }
+
 .adding_count p {
    flex-grow: 1;
    text-align: center;
    justify-content: center;
    align-items: center;
-   border: 2px solid #e5e5e5;
+   border: 2px solid var(--border-color);
    padding: 10px;
    font-size: 1.25rem;
 }
+
 .delete_button img {
    width: 1vw;
 }

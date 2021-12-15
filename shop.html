@@ -2,11 +2,12 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
+      <title>Judith's Coffee</title>
       <link rel="stylesheet" href="css/reset.css" />
       <link rel="stylesheet" href="css/variables.css" />
       <link rel="stylesheet" href="css/style.css" />
-      <title>Judith's Coffee</title>
    </head>
+
    <body>
       <header id="nav_header">
          <div class="container">
@@ -19,11 +20,13 @@
                            <span>About Us</span>
                         </a>
                      </li>
+
                      <li class="list_item">
                         <a href="#products" class="product_link">
                            <span>Products</span>
                         </a>
                      </li>
+
                      <li class="list_item">
                         <a href="#" class="contact_link">
                            <span>Contact Us</span>
@@ -31,16 +34,19 @@
                      </li>
                   </ul>
                </div>
+
                <!-- Logo -->
                <a href="#" class="header_logo">
                   <span><img src="assets/logo.png" alt="logo" /></span>
                </a>
+
                <div class="header_account">
                   <div class="cart">
                      <a href="#cart_container" class="jar_button">
                         <span class="view_cart">
                            <img src="assets/jar.png" alt="cart-jar-images" />
                         </span>
+
                         <span class="count">0</span>
                      </a>
                   </div>
@@ -48,6 +54,7 @@
             </div>
          </div>
       </header>
+
       <main>
          <section>
             <div class="about">
@@ -66,6 +73,8 @@
                </p>
             </div>
          </section>
+
+         <!-- Products for the online shop. Product data can execute from javascript also -->
          <section id="products">
             <div class="grid_container">
                <div class="product_card">
@@ -183,8 +192,11 @@
                   <div class="product_image">
                      <img src="assets/rum.jpg" alt="coffee-image" />
                   </div>
+
                   <div class="product_name">HAVANA RUM</div>
+
                   <div class="product_price">kr. 109,-</div>
+
                   <div class="add_cart">
                      <button data-name="cart9">ADD TO BASKET</button>
                   </div>
@@ -192,23 +204,29 @@
             </div>
          </section>
       </main>
-      <!-- Cart Section -->
 
+      <!-- The cart section only appears when the person clicks the jar-icon (cart-icon) -->
       <section id="cart_container" class="is_visible">
          <div class="background"></div>
+
          <div class="cart_layout">
             <header class="js_container">
                <h1 class="cart_heading">My Basket</h1>
                <button class="close_button">close</button>
             </header>
+
             <div class="add_products">Your Basket is Empty</div>
+
             <footer class="price">
                <div>Total Kr:</div>
+
                <div class="total_price"></div>
             </footer>
          </div>
       </section>
+
       <footer></footer>
+
       <script src="js/shop.js"></script>
    </body>
 </html>
