@@ -1,4 +1,6 @@
 # Coffee-Shop
-It's a online instant flavoured coffee shop.
-I make this website with HTML, CSS, Javascript.
-It's not responsive yet.
+Online shop for a flavored instant coffee shop. 
+Functionality:
+- Add and remove items from the cart
+- Increasing and decreasing the count of the items in the cart
+- Calculating the total amount of the shopping basket
