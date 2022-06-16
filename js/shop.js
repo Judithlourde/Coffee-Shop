@@ -36,7 +36,7 @@ function addToCart(event) {
    
    /*
       Before added the products to the cart[], 
-      checking if product already exist in the cart[] by findIndex().
+      check if product already exist in the cart[] by findIndex().
       findIndex() finds the index of the id in cart[] and compares to buttonName.
       If it is not found - gives -1 else push the product to cart[]
       otherwise adding count.
